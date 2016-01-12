@@ -73,7 +73,7 @@ DEFAULTS = {
 
 ENVIRONMENT = {
     "development": {
-        "conda.channels": ("bcbio-dev", "bcbio", "bioconda"),
+        "conda.channels": ("bioconda", "bcbio-dev"),
         "conda.package": "bcbio-nextgen-vm",
         "log.cli.format": "%(name)s - [%(levelname)s]: %(message)s",
         "log.cli.level": logging.DEBUG,
@@ -83,7 +83,7 @@ ENVIRONMENT = {
     },
 
     "production": {
-        "conda.channels": ("bcbio", "bioconda"),
+        "conda.channels": ("bioconda", ),
         "conda.package": "bcbio-nextgen-vm",
         "log.cli.format": "[%(levelname)s]: %(message)s",
         "log.cli.level": logging.INFO,
